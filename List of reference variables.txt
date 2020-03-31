@@ -1,0 +1,52 @@
+'Grade : G',
+'home_ownership : RENT_OTHER_NONE_ANY',
+'addr_state : ND_NE_IA_NV_FL_HI_AL',
+'verification_status : Verified'
+'purpose : SB_ED',
+'initial_list_status : f',
+'term : 60',
+'emp_length : 0',
+'mths_since_issue_d_date_factor : >84',
+'int_rate : >20.281',
+'mths_since_earliest_cr_line_factor : <140',
+'delinq_2yrs : >=4',
+'inq_last_6mths : >=6',
+'open_acc_factor : 0', 
+'pub_rec : 0-2',
+'total_acc_factor : <=27',
+'acc_now_delinq : 0',
+'total_rev_hi_lim_factorv : <=4k',
+'annual_inc : <20k',
+'dti : >35.9',
+'mths_since_last_delinq : 0-3',
+'mths_since_last_record : 0-2'
+
+
+Columns to drop:
+mths_since_earliest_cr_line_factor
+<70
+70-93
+94-140
+
+delinq_2yrs
+0-3
+4-6
+7-11
+12-21
+
+inq_last_6mths : 10-18
+inq_last_6mths : 7-9
+
+open_acc_factor : <3
+
+pub_rec : 0-1
+pub_rec : 2-4
+
+total_acc_factor : 12-18
+total_acc_factor : 3-12
+total_acc_factor : <3
+total_acc_factor : 18-30
+total_acc_factor : 30-45
+
+acc_now_delinq : >2
+acc_now_delinq : 0-1
